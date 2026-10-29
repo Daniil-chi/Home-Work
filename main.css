@@ -1,0 +1,263 @@
+body
+{
+  color: #000;
+  margin: 0;
+}
+
+header
+{
+  background-color: rgb(38, 169, 224);
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list
+{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:55px;
+}
+
+.nav-list a
+{
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.banner
+{
+  margin: 35px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.banner img
+{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.title
+{
+  text-align: center;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.Novelty
+{
+  padding-top: 40px;
+}
+
+.bookList
+{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.book1, .book2, .book3
+{
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 140px) / 3);
+}
+
+.book1 img, .book2 img, .book3 img
+{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.button
+{
+  font-size: 17px;
+  background-color: rgb(38, 169, 224);
+  color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.Services
+{
+  padding-top: 25px;
+}
+
+.txt
+{
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.txt p
+{
+  margin: 0 0 16px;
+}
+
+.txt .txt1
+{
+  margin-bottom: 10px;
+}
+
+.txt .txt2
+{
+  margin-top: 0;
+}
+
+.txt h3
+{
+  font-size: 19px;
+  margin: 0;
+}
+
+.cards
+{
+  margin: 0 0 3px;
+  padding-left: 35px;
+}
+
+.Sale
+{
+  background-color: rgb(38, 169, 224);
+  margin-top: 20px;
+  padding: 30px 0 15px;
+}
+
+.Sale .title
+{
+  color: whitesmoke;
+  margin-bottom: 15px;
+}
+
+.tableBox
+{
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.saleTable
+{
+  width: 100%;
+  border-collapse: collapse;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.saleTable th, .saleTable td
+{
+  border: 1px solid whitesmoke;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.saleTable th
+{
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer
+{
+  text-align: center;
+  padding: 45px 20px 50px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.author
+{
+  font-size: 16px;
+}
+
+@media (max-width: 992px)
+{
+  .bookList
+  {
+    gap: 30px;
+  }
+
+  .book1, .book2, .book3
+  {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media (max-width: 768px)
+{
+  header
+  {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .nav-list
+  {
+    gap: 12px 30px;
+  }
+
+  .banner
+  {
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+
+  .bookList
+  {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .book1, .book2, .book3
+  {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .title
+  {
+    font-size: 24px;
+  }
+
+  .saleTable
+  {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .nav-list
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txt
+  {
+    font-size: 15px;
+  }
+}
